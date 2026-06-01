@@ -1,0 +1,31 @@
+<div class="contenedor">
+  <h1>Formulario de Usuario</h1>
+
+  <form (ngSubmit)="guardarUsuario()">
+
+    <div class="campo">
+      <label>Nombre</label>
+
+      <input
+        type="text"
+        name="nombre"
+        [(ngModel)]="usuario.nombre"
+      />
+    </div>
+
+    <div class="campo">
+      <label>Correo</label>
+
+      <input
+        type="email"
+        name="correo"
+        [(ngModel)]="usuario.correo"
+      />
+    </div>
+
+    <button type="submit">
+      Guardar
+    </button>
+
+  </form>
+</div>
